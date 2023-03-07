@@ -26,10 +26,6 @@ main {
     background-color: rgb(255, 255, 255);
 }
 
-p.alinhando {
-    padding-right: 0px;
-}
-
 fieldset {
     text-align: center;   
 }
