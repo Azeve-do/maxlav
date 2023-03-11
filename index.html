@@ -17,11 +17,11 @@
             <form action="dados.php" method="post" autocomplete="off">
                 <p class="alinhando">
                     <label for="inome">Nome: </label>
-                    <input type="text" name="nome" id="inome" placeholder="Ex: Caio Paz Nunes...">
+                    <input type="text" name="nome" id="inome" class="Infos" placeholder="Ex: Caio Paz Nunes...">
                 </p>
                 <p class="alinhando">
                     <label for="iubs">Unidade: </label>
-                    <input type="text" name="ubs" id="iubs" list="lstubs">
+                    <input type="text" name="ubs" id="iubs" list="lstubs" class="Infos">
                             <datalist id="lstubs">
                                 <option value="Anunciata">UBS Anunciata de Lúcia</option>
                                 <option value="Jardim D'Avila">UBS Carmeno Naghy</option>
@@ -66,17 +66,17 @@
                 </p>
                 <p class="alinhando">
                     <label for="ipeso">Peso medido: </label>
-                    <input type="number" name="peso" id="ipeso" placeholder="Apenas números..." min="0" step="0.5" max="25">
+                    <input type="number" name="peso" id="ipeso" class="Infos" placeholder="Apenas números..." min="0" step="0.5" max="25">
                     <span>Kg</span>
                 </p>
                 <p class="alinhando">
                     <label for="isemana">Semana de referência: </label>
-                    <input type="week">
+                    <input type="week" class="Infos">
                     <span> 👈🏼 (Clique no ícone do calendário)</span>
                 </p>
                 <p>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" class="Infos">
+                    <input type="reset" value="Limpar" class="Infos">
                 </p>
             </form>
         </fieldset>

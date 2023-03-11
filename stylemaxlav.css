@@ -41,6 +41,6 @@ footer {
     margin-top: 10px;
 }
 
-input[type=number]{
-    width: 125px;
+.Infos {
+    width: 65%;
 }
