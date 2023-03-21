@@ -9,74 +9,72 @@
 </head>
 <body>
     <header>
-        <h1>Indique o peso apurado na semana...</h1>
+        <h1>Indique o peso apurado na semana.</h1>
     </header>
     <main>
+        <h1 id="obrigado">Inserir todas as informações</h1>
         <fieldset>
-            <legend>Teste</legend>
             <form action="dados.php" method="get" autocomplete="off">
                 <p class="alinhando">
-                    <label for="inome">Nome: </label>
-                    <input type="text" name="nome" id="inome" class="Infos" placeholder="Ex: Caio Paz Nunes...">
+                    <label for="inome" class="título">NOME: </label>
+                    <input type="text" name="nome" id="inome" class="Infos" placeholder=" Ex: Caio Paz Nunes..." required>
                 </p>
                 <p class="alinhando">
-                    <label for="iubs">Unidade: </label>
-                    <input type="text" name="ubs" id="iubs" list="lstubs" class="Infos">
+                    <label for="iubs" class="título">UNIDADE: </label>
+                    <input type="text" name="ubs" id="iubs" list="lstubs" class="Infos" placeholder=" Digite o nome da UBS ou, selecione ao clicar...">
                             <datalist id="lstubs">
-                                <option value="Anunciata">UBS Anunciata de Lúcia</option>
-                                <option value="Jardim D'Avila">UBS Carmeno Naghy</option>
-                                <option value="Jaguaribe">UBS Carolina Maria de Jesus</option>
-                                <option value="Ayrosa I">UBS Darcy Alves Evangelista Robalinho</option>
-                                <option value="Três Montanhas">UBS Dr. Adauto Ribeiro</option>
-                                <option value="Munhoz II">UBS Emília Cosme Cerqueira</option>
-                                <option value="Quitaúna">UBS Francisco Dias da Silva</option>
-                                <option value="Portal">UBS Francisca Lima de Lira</option>
-                                <option value="Padroeira">UBS Getulino José Dias</option>
-                                <option value="Metalúrgicos">UBS Guilhermina Nóbrega de Abreu</option>
-                                <option value="Rochdalle">UBS Helena Marrey</option>
-                                <option value="Olaria">UBS Irmã Águeda Maria Jaime</option>
-                                <option value="Vila Yolanda">UBS José Francisco Rezende</option>
-                                <option value="Aliança">UBS José Groff</option>
-                                <option value="Cipava">UBS José Guimarães de Abreu</option>
-                                <option value="Piratininga">UBS José Hilário dos Santos</option>
-                                <option value="Santa Maria">UBS José Meneses Alves</option>
-                                <option value="Baronesa">UBS José Sabino Ferreira</option>
-                                <option value="Jardim D'Abril">UBS Laurinda Rodolfo Rubo</option>
-                                <option value="Vila Justiça">UBS Lia Buarque de Macedo Gasparine</option>
-                                <option value="Jardim Roberto">UBS Luciano Rodrigues Costa</option>
-                                <option value="Vila Menck">UBS Marcio Valdevino</option>
-                                <option value="Palmares">UBS Maria do Socorro Bezerra Patrício</option>
-                                <option value="Maria Gatti">UBS Maria Gatti Giglio</option>
-                                <option value="Novo Osasco">UBS Maria Girade Cury</option>
-                                <option value="Santo Antônio">UBS Maria Pia de Oliveira</option>
-                                <option value="Cidade das Flores">UBS Neyde Alves da Silva</option>
-                                <option value="Vila Yara">UBS Odovaldo Máglio</option>
-                                <option value="Ayrosa II">UBS Octacílio Firmino Lopes</option>
-                                <option value="Vila dos Remédios">UBS Padre Guerrino Riciotti</option>
-                                <option value="Munhoz I">UBS Raimunda Cavalcante de Souza</option>
-                                <option value="Presidente Altino">UBS Santa Gema Galgani</option>
-                                <option value="Bela Vista">UBS Santa Maria Goretti</option>
-                                <option value="Helena Maria">UBS Silvio João Luis de Lúcia</option>
-                                <option value="Veloso">UBS Vasco da Rocha Leão</option>
-                                <option value="CdA">Casa do Adolescente</option>
-                                <option value="CEO">Centro de Especialidades Odontológicas</option>
-                                <option value="CAI Altino">Centro de Atenção ao Idoso - Único Gallafrio</option>
-                                <option value="CAI-KM18">Centro de Atenção ao Idoso - Padre Rafael Busatto</option>
+                                <option value="UBS Anunciata de Lúcia">Anunciata</option>
+                                <option value="UBS Carmeno Naghy">Jardim D'Avila</option>
+                                <option value="UBS Carolina Maria de Jesus">Jaguaribe</option>
+                                <option value="UBS Darcy Alves Evangelista Robalinho">Ayrosa I</option>
+                                <option value="UBS Dr. Adauto Ribeiro">Três Montanhas</option>
+                                <option value="UBS Emília Cosme Cerqueira">Munhoz II</option>
+                                <option value="UBS Francisco Dias da Silva">Quitaúna</option>
+                                <option value="UBS Francisca Lima de Lira">Portal</option>
+                                <option value="UBS Getulino José Dias">Jardim Padroeira</option>
+                                <option value="UBS Guilhermina Nóbrega de Abreu">Metalúrgicos</option>
+                                <option value="UBS Helena Marrey">Rochdalle</option>
+                                <option value="UBS Irmã Águeda Maria Jaime">Olaria</option>
+                                <option value="UBS José Francisco Rezende">Vila Yolanda</option>
+                                <option value="UBS José Groff">Jardim Aliança</option>
+                                <option value="UBS José Guimarães de Abreu">Cipava</option>
+                                <option value="UBS José Hilário dos Santos">Piratininga</option>
+                                <option value="UBS José Meneses Alves">Santa Maria</option>
+                                <option value="UBS José Sabino Ferreira">Baronesa</option>
+                                <option value="UBS Laurinda Rodolfo Rubo">Jardim D'Abril</option>
+                                <option value="UBS Lia Buarque de Macedo Gasparine">Vila Justiça</option>
+                                <option value="UBS Luciano Rodrigues Costa">Jardim Roberto</option>
+                                <option value="UBS Marcio Valdevino">Vila Menck</option>
+                                <option value="UBS Maria do Socorro Bezerra Patrício">Palmares</option>
+                                <option value="UBS Maria Gatti Giglio">Jardim das Flores</option>
+                                <option value="UBS Maria Girade Cury">Novo Osasco</option>
+                                <option value="UBS Maria Pia de Oliveira">Santo Antônio</option>
+                                <option value="UBS Neyde Alves da Silva">Cidade das Flores</option>
+                                <option value="UBS Oduvaldo Máglio">Vila Yara</option>
+                                <option value="UBS Octacílio Firmino Lopes">Ayrosa II</option>
+                                <option value="UBS Padre Guerrino Riciotti">Vila dos Remédios</option>
+                                <option value="UBS Raimunda Cavalcante de Souza">Munhoz I</option>
+                                <option value="UBS Santa Gema Galgani">Santa Gema</option>
+                                <option value="UBS Santa Maria Goretti">Bela Vista</option>
+                                <option value="UBS Silvio João Luis de Lúcia">Helena Maria</option>
+                                <option value="UBS Vasco da Rocha Leão">Jardim Veloso</option>
+                                <option value="Casa do Adolescente">CdA</option>
+                                <option value="Centro de Especialidades Odontológicas">CEO</option>
+                                <option value="Centro de Atenção ao Idoso - Único Gallafrio">CAI - KM18</option>
+                                <option value="Centro de Atenção ao Idoso - Padre Rafael Busatto">CAI - Altino</option>
                             </datalist>
                 </p>
                 <p class="alinhando">
-                    <label for="ipeso">Peso medido: </label>
-                    <input type="number" name="peso" id="ipeso" class="Infos" placeholder="Apenas números..." min="0" step="0.5" max="25">
-                    <span>Kg</span>
+                    <label for="ipeso" class="título">PESO MEDIDO: </label>
+                    <input type="number" name="peso" id="ipeso" class="Infos" placeholder=" Apenas números..." min="0" step="0.5" max="25" required>
                 </p>
                 <p class="alinhando">
-                    <label for="isemana">Semana de referência: </label>
-                    <input type="week" class="Infos">
-                    <span> 👈🏼 (Clique no ícone do calendário)</span>
+                    <label for="isemana" class="título">SEMANA DE REFERÊNCIA: (Clique no ícone do calendário 👇) </label>
+                    <input type="week" class="Infos" required>
                 </p>
                 <p>
-                    <input type="submit" value="Enviar" class="Infos">
-                    <input type="reset" value="Limpar" class="Infos">
+                    <input type="submit" value="Enviar" class="botões">
+                    <input type="reset" value="Limpar" class="botões" id="ilimpar" required>
                 </p>
             </form>
         </fieldset>

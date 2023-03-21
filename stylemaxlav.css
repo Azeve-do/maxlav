@@ -10,7 +10,7 @@ body {
     font-size: 20px;
 }
 
-header {
+header > h1 {
     background-color: white;
     text-align: center;
     color: black;
@@ -19,19 +19,45 @@ header {
 
 main {
     height: 85vh;
-    padding: 20px;
     min-width: 320px;
     max-width: 550px;
+
+    padding: 20px;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+
+    background-color: rgb(119, 119, 206);
+
+    border-radius: 0px 30px 0px 30px;
+}
+
+h1#obrigado {
+    margin: auto;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    width: 350px;
+    border-radius: 5px 5px 0px 0px;
+    
 }
 
 fieldset {
-    text-align: center;   
+    background-color: #000000a4;
+
+    text-align: left;   
+
+    height: 85%;
+    width: 100%;
+    
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.801);
+    border: 1px solid black;
+    border-radius: 0px 20px 0px 20px;
 }
 
 legend {
-    text-align: left;
+    
 }
 
 footer {
@@ -42,5 +68,39 @@ footer {
 }
 
 .Infos {
-    width: 65%;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+    width: 95%;
+    height: 35px;
+    margin: 0px 0px 20px 15px;
+}
+
+.Infos:hover {
+    background-color: #c0bbbb;
+}
+
+.título {
+    margin-left: 17px;
+    font-size: 17px;
+    color: rgb(121, 187, 104);
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.botões {
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+    width: 95%;
+    height: 35px;
+    margin: 0px 0px 20px 15px;
+}
+
+.botões:hover {
+    background-color: #92df9c;
+}
+
+#ilimpar:hover {
+    background-color: rgb(237, 248, 137);
 }
