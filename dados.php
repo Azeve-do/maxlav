@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Teste Teste</h1>
-    <iframe src="http://172.20.15.152:8080/banco/" frameborder="0">teste</iframe>
+    
 </body>
 </html>
