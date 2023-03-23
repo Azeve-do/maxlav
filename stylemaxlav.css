@@ -83,6 +83,7 @@ footer {
     margin-left: 17px;
     font-size: 17px;
     color: rgb(121, 187, 104);
+    font-weight: bold;
 }
 
 ::placeholder {
@@ -99,8 +100,13 @@ footer {
 
 .botões:hover {
     background-color: #92df9c;
+    transition: 0.7s;
 }
 
 #ilimpar:hover {
     background-color: rgb(237, 248, 137);
+}
+
+span {
+    text-decoration: underline;
 }
