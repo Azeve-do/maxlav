@@ -11,9 +11,9 @@ body {
 }
 
 header > h1 {
-    background-color: white;
+    background-color: #00000062;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
 
@@ -56,14 +56,11 @@ fieldset {
     border-radius: 0px 20px 0px 20px;
 }
 
-legend {
-    
-}
-
 footer {
+    color: white;
     padding: 15px;
     text-align: center;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.322);
     margin-top: 10px;
 }
 
@@ -91,14 +88,18 @@ footer {
 }
 
 .botões {
+    font-weight: bolder;
     border: 1px solid rgba(0, 0, 0, 0.315);
-    border-radius: 5px;
-    width: 95%;
+    border-radius: 20px;
+    width: 50%;
     height: 35px;
-    margin: 0px 0px 20px 15px;
+    margin-left: 135px;
+    margin-bottom: 15px;
+    color: rgb(23, 63, 48);
 }
 
 .botões:hover {
+    transform: translate(0px, -3px);
     background-color: #92df9c;
     transition: 0.7s;
 }
