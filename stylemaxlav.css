@@ -83,7 +83,7 @@ footer {
     margin-left: 17px;
     font-size: 17px;
     color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: 100;
 }
 
 ::placeholder {
@@ -111,3 +111,19 @@ footer {
 span {
     text-decoration: underline;
 }
+
+/* #loading {
+    width: 30px;
+    animation: spin 1s infinite;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+} */

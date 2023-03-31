@@ -14,7 +14,7 @@
     <main>
         <h1 id="obrigado">Inserir todas as informações</h1>
         <fieldset>
-            <form action="usuario.php?salvar=salvarusuario" method="post" autocomplete="off">
+            <form autocomplete="off">
                 <p class="alinhando">
                     <label for="inome" class="título">NOME: </label>
                     <input type="text" name="nome" id="inome" class="Infos" placeholder=" Ex: Caio Paz Nunes..." required>
@@ -73,8 +73,8 @@
                     <input type="week" class="Infos" required name="semana" id="isemana">
                 </p>
                 <p>
-                    <input type="submit" value="ENVIAR" class="botões">
-                    <input type="reset" value="LIMPAR" class="botões" id="ilimpar" required>
+                    <input type="submit" class="botões" value="Enviar" id="loading">
+                    <input type="reset" value="LIMPAR" class="botões" id="ilimpar">
                 </p>
             </form>
         </fieldset>
@@ -82,5 +82,33 @@
     <footer>
         <p>quem manda EHA30</p>
     </footer>
+
+    <script>
+
+       /*  const addLoading = () => {
+            const botão = document.querySelector('#loading');
+            botão.innerHTML = '<img src="/loading.png" id="loading">';
+        } */
+
+        const handleSubmit = (event) => {
+            event.preventDefault();
+            /* addLoading(); */
+
+            const nome = document.querySelector('input[name=nome]').value;
+            const ubs = document.querySelector('input[name=ubs]').value;
+            
+
+            fetch('https://api.sheetmonkey.io/form/i3pppLSPiFjp7vARJFx5uc', {
+                method: 'post',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({nome, ubs}),
+            });
+        }
+
+        document.querySelector('form').addEventListener('submit', handleSubmit)
+    </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-if(isset($_GET["salvar"]) and $_GET["salvar"] == "salvarusuario"){
+/* if(isset($_GET["salvar"]) and $_GET["salvar"] == "salvarusuario"){
     $nome = $_POST["nome"];
     $ubs = $_POST["ubs"];
     $peso = $_POST["peso"];
@@ -12,5 +12,5 @@ if(isset($_GET["salvar"]) and $_GET["salvar"] == "salvarusuario"){
     $stmt->bindParam(":Peso",$peso, PDO::PARAM_STR);
     $stmt->bindParam(":Semana",$semana, PDO::PARAM_STR);
     maxlav
-}
+} */
 ?>
