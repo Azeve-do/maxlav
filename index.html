@@ -96,6 +96,8 @@
 
             const nome = document.querySelector('input[name=nome]').value;
             const ubs = document.querySelector('input[name=ubs]').value;
+            const peso = document.querySelector('input[name=peso]').value;
+            const semana = document.querySelector('input[name=semana]').value;
             
 
             fetch('https://api.sheetmonkey.io/form/i3pppLSPiFjp7vARJFx5uc', {
@@ -104,7 +106,7 @@
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({nome, ubs}),
+                body: JSON.stringify({nome, ubs, peso, semana}),
             });
         }
 
