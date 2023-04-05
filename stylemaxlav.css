@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+body, html {
+    background-image: linear-gradient(180deg, #242429, #040311b4);
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     background-color: #000000c9;
     background-image: linear-gradient(180deg, #242429, #040311b4);
@@ -11,20 +17,20 @@ body {
     font-size: 20px;
 }
 
+body > main > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header > h1 {
-    text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 0px black;
-    margin-bottom: 10px;
 }
 
 main {
-    height: 85vh;
-    min-width: 320px;
-    max-width: 550px;
-
-    padding: 20px;
-    margin: auto;
+    width: 250px;
+    height: 580px;
 
     background-color: white;
     box-shadow: 0px 0px 20px rbga(0, 0, 0, 0.502);
@@ -35,12 +41,16 @@ main {
 h1#obrigado {
     margin: auto;
     margin-bottom: 15px;
+    
     border: 1px solid black;
+
     background-color: whitesmoke;
     color: #4CAF50;
+
     font-size: 20px;
     text-align: center;
-    width: 350px;
+
+    width: 100%;
     border-radius: 5px 5px 0px 0px;
     
 }
@@ -59,18 +69,19 @@ fieldset {
 }
 
 footer {
-    color: white;
-    padding: 15px;
-    text-align: center;
     margin-top: 10px;
+    color: white;
+    text-align: center;
 }
 
 .Infos {
     border: 1px solid rgba(0, 0, 0, 0.315);
     border-radius: 5px;
+
     width: 95%;
-    height: 35px;
-    margin: 0px 0px 20px 15px;
+    height: 25px;
+    margin: 5px;
+    
     font-weight: 800;
 }
 
@@ -91,15 +102,16 @@ footer {
 }
 
 .botões {
+    color: white;
     background-color: #4CAF50;
     font-weight: bolder;
+    
     border: 1px solid rgba(0, 0, 0, 0.315);
     border-radius: 4px;
-    width: 50%;
+    
+    width: 100%;
     height: 35px;
-    margin-left: 135px;
     margin-bottom: 15px;
-    color: white;
 }
 
 .botões:hover {
