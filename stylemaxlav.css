@@ -17,31 +17,34 @@ body {
     font-size: 20px;
 }
 
-body > main > form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header > h1 {
+header {
+    margin-left: auto;
     color: rgb(255, 255, 255);
     text-shadow: 3px 3px 0px black;
 }
 
 main {
-    width: 250px;
+    width: 300px;
     height: 580px;
 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 20px rbga(0, 0, 0, 0.502);
 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
     border-radius: 0px 30px 0px 30px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 h1#obrigado {
-    margin: auto;
-    margin-bottom: 15px;
-    
     border: 1px solid black;
 
     background-color: whitesmoke;
@@ -52,7 +55,6 @@ h1#obrigado {
 
     width: 100%;
     border-radius: 5px 5px 0px 0px;
-    
 }
 
 fieldset {
@@ -60,7 +62,7 @@ fieldset {
     background-image: linear-gradient(180deg, #242429, #040311b4);
     text-align: left;   
 
-    height: 95%;
+    height: 100%;
     width: 100%;
     
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.801);
@@ -69,7 +71,6 @@ fieldset {
 }
 
 footer {
-    margin-top: 10px;
     color: white;
     text-align: center;
 }
@@ -80,7 +81,8 @@ footer {
 
     width: 95%;
     height: 25px;
-    margin: 5px;
+    margin-top: 15px;
+    margin-left: 6px;
     
     font-weight: 800;
 }
@@ -91,15 +93,12 @@ footer {
 
 .título {
     background-color: rgb(42, 38, 63);
-    margin-left: 17px;
-    font-size: 17px;
+    margin: auto;
+    font-size: 15px;
     color: rgb(255, 255, 255);
     font-weight: 100;
 }
 
-::placeholder {
-    text-align: center;
-}
 
 .botões {
     color: white;
@@ -111,7 +110,7 @@ footer {
     
     width: 100%;
     height: 35px;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .botões:hover {
@@ -124,17 +123,31 @@ span {
     text-decoration: underline;
 }
 
+/* definindo a animação */
+
+@keyframes moverParaEsquerda {
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);}
+  }
+
+::placeholder {
+    position: absolute;
+    animation: moverParaEsquerda 5s linear infinite;
+}
+
+  
+
 /* #loading {
     width: 30px;
     animation: spin 1s infinite;
-
+    
 }
 
 @keyframes spin {
     from {
         transform: rotate(0deg);
     }
-
+    
     to {
         transform: rotate(360deg);
     }
