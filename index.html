@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="stylemaxlav.css">
     <link rel="stylesheet" href="style.css" media=" ">
 </head>
+
 <body>
     <header>
         <h1>Indique o peso apurado na semana.</h1>
@@ -16,81 +18,157 @@
         <fieldset>
             <h1 id="obrigado">Inserir todas as informações</h1>
             <form autocomplete="off">
-                <p class="alinhando">
+                <div class="alinhando">
                     <label for="inome" class="título">NOME: </label>
-                    <input type="text" name="nome" id="inome" class="Infos" placeholder=" Ex: Caio Paz Nunes..." required>
-                </p>
-                <p class="alinhando">
+                    <input type="text" name="nome" id="inome" class="Infos" placeholder=" Ex: Caio Paz Nunes..."
+                        required>
+                </div>
+                <div class="alinhando">
                     <label for="iubs" class="título">UNIDADE: </label>
-                    <input type="text" name="ubs" id="iubs" list="lstubs" class="Infos" placeholder=" Digite o nome da UBS ou, selecione ao clicar...">
-                            <datalist id="lstubs">
-                                <option value="UBS Anunciata de Lúcia">Anunciata</option>
-                                <option value="UBS Carmeno Naghy">Jardim D'Avila</option>
-                                <option value="UBS Carolina Maria de Jesus">Jaguaribe</option>
-                                <option value="UBS Darcy Alves Evangelista Robalinho">Ayrosa I</option>
-                                <option value="UBS Dr. Adauto Ribeiro">Três Montanhas</option>
-                                <option value="UBS Emília Cosme Cerqueira">Munhoz II</option>
-                                <option value="UBS Francisco Dias da Silva">Quitaúna</option>
-                                <option value="UBS Francisca Lima de Lira">Portal</option>
-                                <option value="UBS Getulino José Dias">Jardim Padroeira</option>
-                                <option value="UBS Guilhermina Nóbrega de Abreu">Metalúrgicos</option>
-                                <option value="UBS Helena Marrey">Rochdalle</option>
-                                <option value="UBS Irmã Águeda Maria Jaime">Olaria</option>
-                                <option value="UBS José Francisco Rezende">Vila Yolanda</option>
-                                <option value="UBS José Groff">Jardim Aliança</option>
-                                <option value="UBS José Guimarães de Abreu">Cipava</option>
-                                <option value="UBS José Hilário dos Santos">Piratininga</option>
-                                <option value="UBS José Meneses Alves">Santa Maria</option>
-                                <option value="UBS José Sabino Ferreira">Baronesa</option>
-                                <option value="UBS Laurinda Rodolfo Rubo">Jardim D'Abril</option>
-                                <option value="UBS Lia Buarque de Macedo Gasparine">Vila Justiça</option>
-                                <option value="UBS Luciano Rodrigues Costa">Jardim Roberto</option>
-                                <option value="UBS Marcio Valdevino">Vila Menck</option>
-                                <option value="UBS Maria do Socorro Bezerra Patrício">Palmares</option>
-                                <option value="UBS Maria Gatti Giglio">Jardim das Flores</option>
-                                <option value="UBS Maria Girade Cury">Novo Osasco</option>
-                                <option value="UBS Maria Pia de Oliveira">Santo Antônio</option>
-                                <option value="UBS Neyde Alves da Silva">Cidade das Flores</option>
-                                <option value="UBS Oduvaldo Máglio">Vila Yara</option>
-                                <option value="UBS Octacílio Firmino Lopes">Ayrosa II</option>
-                                <option value="UBS Padre Guerrino Riciotti">Vila dos Remédios</option>
-                                <option value="UBS Raimunda Cavalcante de Souza">Munhoz I</option> 
-                                <option value="UBS Santa Gema Galgani">Santa Gema</option>
-                                <option value="UBS Santa Maria Goretti">Bela Vista</option>
-                                <option value="UBS Silvio João Luis de Lúcia">Helena Maria</option>
-                                <option value="UBS Vasco da Rocha Leão">Jardim Veloso</option>
-                                <option value="Casa do Adolescente">CdA</option>
-                                <option value="Centro de Especialidades Odontológicas">CEO</option>
-                                <option value="Centro de Atenção ao Idoso - Único Gallafrio">CAI - KM18</option>
-                                <option value="Centro de Atenção ao Idoso - Padre Rafael Busatto">CAI - Altino</option>
-                            </datalist>
-                </p>
-                <p class="alinhando">
+                    <input type="text" name="ubs" id="iubs" list="lstubs" class="Infos"
+                        placeholder=" Digite o nome da UBS ou, selecione ao clicar...">
+                    <datalist id="lstubs">
+                    </datalist>
+                </div>
+                <div class="alinhando">
                     <label for="ipeso" class="título">PESO MEDIDO: </label>
-                    <input type="number" name="peso" id="ipeso" class="Infos" placeholder=" Apenas números..." min="0" step="0.1" max="25" required>
-                </p>
-                <p class="alinhando">
-                    <label for="isemana" class="título">SEMANA DE REFERÊNCIA:<br><span>(   Clique no ícone do calendário 👇)</span> </label>
+                    <input type="text" name="peso" id="ipeso" class="Infos" placeholder=" Apenas números..." min="0"
+                        max="25" required>
+                </div>
+                <div class="alinhando">
+                    <label for="isemana" class="título">SEMANA DE REFERÊNCIA:<br><span>( Clique no ícone do calendário
+                            👇)</span> </label>
                     <input type="week" class="Infos" required name="semana" id="isemana">
-                </p>
-                <p>
+                </div>
+                <div>
                     <input type="submit" class="botões" value="ENVIAR" id="loading">
                     <input type="reset" value="LIMPAR" class="botões" id="ilimpar">
-                </p>
+                </div>
             </form>
         </fieldset>
     </main>
     <footer>
-        <p>feito por 
-        </p>
+        <p>feito por</p>
     </footer>
 
     <script>
 
-       /*  const addLoading = () => {
-            const botão = document.querySelector('#loading');
-            botão.innerHTML = '<img src="/loading.png" id="loading">';
-        } */
+
+        let input = document.querySelector("#ipeso");
+
+        function isNumber(string) {
+            return !isNaN(parseFloat(string)) && isFinite(string);
+        }
+
+        const checkNumber = (e) => {
+            if ((!isNumber(e.target.value) && !e.target.value.includes(',')) || e.target.value.includes('.')) {
+                input.value = ""
+            } else if (parseFloat(e.target.value) >= 30) {
+                input.value = "30"
+            }
+        }
+
+        input.addEventListener("input", checkNumber);
+
+
+
+        /*  const addLoading = () => {
+             const botão = document.querySelector('#loading');
+             botão.innerHTML = '<img src="/loading.png" id="loading">';
+         } */
+
+        const ubsList = [
+            "UBS Anunciata de Lúcia",
+            "UBS Carmeno Naghy",
+            "UBS Carolina Maria de Jesus",
+            "UBS Darcy Alves Evangelista Robalinho",
+            "UBS Dr. Adauto Ribeiro",
+            "UBS Emília Cosme Cerqueira",
+            "UBS Francisco Dias da Silva",
+            "UBS Francisca Lima de Lira",
+            "UBS Getulino José Dias",
+            "UBS Guilhermina Nóbrega de Abreu",
+            "UBS Helena Marrey",
+            "UBS Irmã Águeda Maria Jaime",
+            "UBS José Francisco Rezende",
+            "UBS José Groff",
+            "UBS José Guimarães de Abreu",
+            "UBS José Hilário dos Santos",
+            "UBS José Meneses Alves",
+            "UBS José Sabino Ferreira",
+            "UBS Laurinda Rodolfo Rubo",
+            "UBS Lia Buarque de Macedo Gasparine",
+            "UBS Luciano Rodrigues Costa",
+            "UBS Marcio Valdevino",
+            "UBS Maria do Socorro Bezerra Patrício",
+            "UBS Maria Gatti Giglio",
+            "UBS Maria Girade Cury",
+            "UBS Maria Pia de Oliveira",
+            "UBS Neyde Alves da Silva",
+            "UBS Oduvaldo Máglio",
+            "UBS Octacílio Firmino Lopes",
+            "UBS Padre Guerrino Riciotti",
+            "UBS Raimunda Cavalcante de Souza",
+            "UBS Santa Gema Galgani",
+            "UBS Santa Maria Goretti",
+            "UBS Silvio João Luis de Lúcia",
+            "UBS Vasco da Rocha Leão",
+            "Casa do Adolescente",
+            "Centro de Especialidades Odontológicas",
+            "Centro de Atenção ao Idoso - Único Gallafrio",
+            "Centro de Atenção ao Idoso - Padre Rafael Busatto"
+        ]
+
+        const ubsTextList = [
+            "Anunciata",
+            "Jardim D'Avila",
+            "Jaguaribe",
+            "Ayrosa I",
+            "Três Montanhas",
+            "Munhoz II",
+            "Quitaúna",
+            "Portal",
+            "Jardim Padroeira",
+            "Metalúrgicos",
+            "Rochdalle",
+            "Olaria",
+            "Vila Yolanda",
+            "Jardim Aliança",
+            "Cipava",
+            "Piratininga",
+            "Santa Maria",
+            "Baronesa",
+            "Jardim D'Abril",
+            "Vila Justiça",
+            "Jardim Roberto",
+            "Vila Menck",
+            "Palmares",
+            "Jardim das Flores",
+            "Novo Osasco",
+            "Santo Antônio",
+            "Cidade das Flores",
+            "Vila Yara",
+            "Ayrosa II",
+            "Vila dos Remédios",
+            "Munhoz I",
+            "Santa Gema",
+            "Bela Vista",
+            "Helena Maria",
+            "Jardim Veloso",
+            "CdA",
+            "CEO",
+            "CAI - KM18",
+            "CAI - Altino",
+        ]
+
+        let dataList = document.querySelector('#lstubs')
+
+        for (let i = 0; i < ubsList.length; i++) {
+            let option = document.createElement('option')
+            option.value = ubsList[i]
+            option.textContent = ubsTextList[i]
+            dataList.appendChild(option)
+        }
 
         const handleSubmit = (event) => {
             event.preventDefault();
@@ -100,7 +178,6 @@
             const ubs = document.querySelector('input[name=ubs]').value;
             const peso = document.querySelector('input[name=peso]').value;
             const semana = document.querySelector('input[name=semana]').value;
-            
 
             fetch('https://api.sheetmonkey.io/form/i3pppLSPiFjp7vARJFx5uc', {
                 method: 'post',
@@ -108,11 +185,12 @@
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({nome, ubs, peso, semana}),
+                body: JSON.stringify({ nome, ubs, peso, semana }),
             });
         }
 
         document.querySelector('form').addEventListener('submit', handleSubmit)
     </script>
 </body>
+
 </html>
