@@ -116,3 +116,7 @@ footer {
 span {
     text-decoration: underline;
 }
+
+::placeholder {
+    font-size: 13px;
+}
