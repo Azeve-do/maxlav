@@ -18,27 +18,37 @@
         <fieldset>
             <h1 id="obrigado">Inserir todas as informações</h1>
             <form autocomplete="off">
-                <div class="alinhando">
+                <div>
                     <label for="inome" class="título">NOME: </label>
                     <input type="text" name="nome" id="inome" class="Infos" placeholder=" Ex: Caio Paz Nunes..."
                         required>
                 </div>
-                <div class="alinhando">
+                <div>
                     <label for="iubs" class="título">UNIDADE: </label>
                     <input type="text" name="ubs" id="iubs" list="lstubs" class="Infos"
                         placeholder=" Digite o nome da UBS ou, selecione ao clicar...">
                     <datalist id="lstubs">
                     </datalist>
                 </div>
-                <div class="alinhando">
+                <div>
                     <label for="ipeso" class="título">PESO MEDIDO: </label>
                     <input type="text" name="peso" id="ipeso" class="Infos" placeholder=" Apenas números... Limite de 30Kg" min="0"
                         max="25" required>
                 </div>
-                <div class="alinhando">
+                <div>
                     <label for="isemana" class="título">SEMANA DE REFERÊNCIA:<br><span>( Clique no ícone do calendário
                             👇)</span> </label>
                     <input type="week" class="Infos" required name="semana" id="isemana">
+                </div>
+                <br>
+                <div>
+                    <p>Empresa está cumprindo as funções estabelicidas ?</p>
+
+                    <input type="radio" name="resposta" id="isim">
+                    <label for="isim" class="título">Sim</label>
+                    <br>
+                    <input type="radio" name="resposta" id="inao">
+                    <label for="inao" class="título">Não</label>
                 </div>
                 <div>
                     <input type="submit" class="botões" value="ENVIAR" id="loading">
@@ -48,7 +58,6 @@
         </fieldset>
     </main>
     <footer>
-        <p>feito por</p>
     </footer>
 
     <script>
@@ -187,6 +196,8 @@
                 body: JSON.stringify({ nome, ubs, peso, semana }),
             });
         }
+
+
 
         document.querySelector('form').addEventListener('submit', handleSubmit)
     </script>

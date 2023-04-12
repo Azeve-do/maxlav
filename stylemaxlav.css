@@ -69,6 +69,11 @@ footer {
     text-align: center;
 }
 
+p {
+    text-align: center;
+    color: white;
+}
+
 .Infos {
     border: 1px solid rgba(0, 0, 0, 0.315);
     border-radius: 5px;
