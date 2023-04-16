@@ -5,6 +5,13 @@ body, html {
     padding: 0px;
 }
 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-color: black;
+    background-image: linear-gradient(to right, rgba(121, 226, 127, 0.89), rgba(134, 224, 141, 0.438));
+}
+
 h1 {
     text-align: center;
 }
@@ -12,6 +19,8 @@ h1 {
 table {
     border-collapse: collapse;
     margin: auto;
+    background-color: #1f221fc9;
+    color:  #bfcac0;
 }
 
 td {
@@ -23,3 +32,12 @@ td {
     padding: 5px;
 }
 
+#teste {
+    color: #4CAF50;;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+td:hover {
+    background-color:rgba(0, 0, 0, 0.651)
+}
